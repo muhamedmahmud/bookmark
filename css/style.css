@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap");
+
+body {
+  background-color: beige;
+  font-family: PT Sans Caption, sans-serif;
+}
+.book-icon {
+  font-size: 300px;
+  background-image: url(../images/nb.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.header-content {
+  margin: 25px auto;
+  font-size: 60px;
+  font-family: pacifico, sans-serif;
+  color: #09c;
+  line-height: 70px;
+  position: relative;
+  left: 50%;
+  transform:translateX(-50%) ;
+  overflow: hidden;
+  display: inline-block;
+}
+.header-hover {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  background-color: #020113;
+  position: absolute;
+  left: 50%;
+  top: 80% !important;
+  transform: translatex(-50%);
+  top: 35px;
+  z-index: -1;
+  transition: top 0.5s;
+}
+.header-content:hover .header-hover {
+  top: 0 !important;
+}
+.my-row {
+  border-top: 5px black dotted;
+  border-bottom: 5px black dotted;
+}
+h2 {
+  font-size: 23px;
+  text-align: center;
+  padding: 20px 0;
+}
+
+
+.form{
+    font-size: 20px;
+    input{
+        font-size: 20px;
+    }
+}
+
+.my-table{
+  font-size: 25px;
+}
+
+#container{
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+width: 400px;
+height: 150px;
+box-shadow: 3px 5px 9px ;
+border-radius: 5px;
+}
+#msg{
+  margin: 30px;
+}
+#container1{
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+width: 400px;
+height: 150px;
+box-shadow: 3px 5px 9px ;
+border-radius: 5px;
+}
+#msg1{
+  margin: 30px;
+}
