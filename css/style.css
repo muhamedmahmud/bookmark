@@ -46,21 +46,19 @@ body {
   border-bottom: 5px black dotted;
 }
 h2 {
-  font-size: 23px;
   text-align: center;
   padding: 20px 0;
 }
 
 
 .form{
-    font-size: 20px;
     input{
         font-size: 20px;
     }
 }
 
 .my-table{
-  font-size: 25px;
+  font-size: 20px;
 }
 
 #container{
