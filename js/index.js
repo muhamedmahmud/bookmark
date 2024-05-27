@@ -1,8 +1,9 @@
 var bookUrl = document.getElementById("bookUrl");
 var bookName = document.getElementById("bookName");
 var books = [];
-
-books = JSON.parse(localStorage.getItem("booksContainer"))
+if (localStorage != null){
+books = JSON.parse(localStorage.getItem("booksContainer"));
+}
 displayData();
 function addBook() {
   var book = {
@@ -10,7 +11,7 @@ function addBook() {
     bookName: bookName.value,
   };
   books.push(book);
-  localStorage.setItem("booksContainer" ,JSON.stringify(books));
+  localStorage.setItem("booksContainer", JSON.stringify(books));
   clearForm();
   displayData();
 }
@@ -42,7 +43,7 @@ function displayData() {
 }
 function deleteMe(index) {
   books.splice(index, 1);
-  localStorage.setItem("booksContainer" ,JSON.stringify(books));
+  localStorage.setItem("booksContainer", JSON.stringify(books));
 
   displayData();
 }
@@ -66,7 +67,4 @@ function hide1() {
   var alert = document.getElementById("container1");
   alert.style.display = "none";
 }
-function nameValidation(){
-
-}
-
+function nameValidation() {}
