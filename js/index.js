@@ -1,8 +1,8 @@
 var bookUrl = document.getElementById("bookUrl");
 var bookName = document.getElementById("bookName");
 var books = [];
-if (localStorage != null){
-books = JSON.parse(localStorage.getItem("booksContainer"));
+if (localStorage != null) {
+  books = JSON.parse(localStorage.getItem("booksContainer"));
 }
 displayData();
 function addBook() {
@@ -67,4 +67,3 @@ function hide1() {
   var alert = document.getElementById("container1");
   alert.style.display = "none";
 }
-function nameValidation() {}
