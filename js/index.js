@@ -48,8 +48,8 @@ function deleteMe(index) {
   displayData();
 }
 function visiteMe(bookUrl) {
-  bookUrl='https://' + bookUrl;
-  window.open(bookUrl, "_blank");
+  var link = "https://"+ bookUrl;
+  window.open(book=link, "_blank");
 }
 function show() {
   var alert = document.getElementById("container");
