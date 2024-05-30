@@ -48,7 +48,7 @@ function deleteMe(index) {
   displayData();
 }
 function visiteMe(bookUrl) {
-  console.log(bookUrl);
+  bookUrl='https://'+bookUrl;
   window.open(bookUrl, "_blank");
 }
 function show() {
