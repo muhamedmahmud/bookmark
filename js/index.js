@@ -1,10 +1,10 @@
 var bookUrl = document.getElementById("bookUrl");
 var bookName = document.getElementById("bookName");
 var books = [];
-if (localStorage != null) {
+if (localStorage.getItem("booksContainer")) {
   books = JSON.parse(localStorage.getItem("booksContainer"));
+  displayData();
 }
-displayData();
 function addBook() {
   var book = {
     bookUrl: bookUrl.value,
